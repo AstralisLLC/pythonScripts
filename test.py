@@ -1,3 +1,6 @@
+import os
+import subprocess
+subprocess.run('pip install socket')
 import socket
 
 def get_ip_address():
