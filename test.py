@@ -1,6 +1,8 @@
-import os
-import sys
+import socket
 
-test1 = input('Enter an input: ')
+def get_ip_address():
+    hostname = socket.gethostname()
+    ip_address = socket.gethostbyname(hostname)
+    return ip_address
 
-print(test1)
+print("Your IP address is:", get_ip_address())
